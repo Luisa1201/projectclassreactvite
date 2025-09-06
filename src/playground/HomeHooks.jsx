@@ -32,10 +32,10 @@ function HomeHooks(){
                 </tbody>
                 <tbody>
                     <tr>
-                        <td><strong>NuevoHook</strong></td>
-                        <td><a href="" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
-                        <td>Descripción breve del hook.</td>
-                        <td>Navegación</td>
+                        <td><strong>useDebugValue</strong></td>
+                        <td><a href="/useDebugValue" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
+                        <td>Para mostrar un valor de depuración legible.</td>
+                        <td>Estado</td>
                     </tr>
                 </tbody>
              </table>
