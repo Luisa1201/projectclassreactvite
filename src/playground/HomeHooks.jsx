@@ -8,7 +8,7 @@ function HomeHooks(){
                 <div className="list-group">
                 <a href="/useState" className="list-group-item">Ir a userState</a>
                 <a href="/useNavigate" className="list-group-item">Ir a useNavigate </a>
-                <a href="#" className="list-group-item">Ir a </a>
+                <a href="/" className="list-group-item">Ir a </a>
                 </div>
                 
             </div>
