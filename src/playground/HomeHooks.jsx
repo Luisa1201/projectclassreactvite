@@ -3,7 +3,6 @@ import React from "react";
 function HomeHooks(){
     return(
 
-
         <div className="container mt-4">
              <h2 className="text-center mb-4">Ejemplos de Hooks</h2>
              <table className="table table-bordered table-hover text-center">
@@ -41,10 +40,10 @@ function HomeHooks(){
                 </tbody>
              </table>
 
-        </div>
-
+            </div>
 
     );
 }
+
 
 export default HomeHooks;
