@@ -38,6 +38,14 @@ function HomeHooks(){
                         <td>Estado</td>
                     </tr>
                 </tbody>
+                <tbody>
+                    <tr>
+                        <td><strong>useDebugValue</strong></td>
+                        <td><a href="/useDebugValue" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
+                        <td>Para mostrar un valor de depuración legible.</td>
+                        <td>Estado</td>
+                    </tr>
+                </tbody>
              </table>
 
             </div>
