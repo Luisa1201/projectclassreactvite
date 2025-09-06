@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import HookUserState from './playground/HookUserState'
+import HookUseState from './playground/HookUseState'
 import HomeHooks from './playground/HomeHooks'
 import HookUseNavigate from './playground/HookUseNavigate'
 
@@ -11,7 +11,7 @@ function App() {
    <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomeHooks />}></Route>
-         <Route path='/useState' element={<HookUserState />}></Route>
+         <Route path='/useState' element={<HookUseState />}></Route>
          <Route path='/useNavigate' element={<HookUseNavigate />}></Route>
          
 
