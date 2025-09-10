@@ -40,9 +40,17 @@ function HomeHooks(){
                 </tbody>
                 <tbody>
                     <tr>
-                        <td><strong>useDebugValue</strong></td>
-                        <td><a href="/useDebugValue" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
-                        <td>Para mostrar un valor de depuración legible.</td>
+                        <td><strong>useReducer</strong></td>
+                        <td><a href="/useReducer" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
+                        <td>para manejar estados más complejos o cuando varias acciones pueden modificar el mismo estado.</td>
+                        <td>Estado</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><strong>useRef</strong></td>
+                        <td><a href="/useRef" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
+                        <td>para manejar estados más complejos o cuando varias acciones pueden modificar el mismo estado.</td>
                         <td>Estado</td>
                     </tr>
                 </tbody>
