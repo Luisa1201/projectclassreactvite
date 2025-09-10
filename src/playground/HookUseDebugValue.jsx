@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useSyncExternalStore, useDebugValue } from "react";
 
-// Hook original
 function useOnlineStatus() {
   const isOnline = useSyncExternalStore(
     subscribe,
@@ -49,8 +48,12 @@ function HookUseDebugValue() {
           </button>
         </div>
       </div>
+      <a href="/" className="list-group-item">Ir al Home </a>
     </div>
+    
   );
+
+  
 }
 
 export default HookUseDebugValue;

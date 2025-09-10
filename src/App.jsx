@@ -3,7 +3,9 @@ import './App.css'
 import HookUseState from './playground/HookUseState'
 import HomeHooks from './playground/HomeHooks'
 import HookUseNavigate from './playground/HookUseNavigate'
-import HookUseDebugValue from './playground/HomeUseDebugValue'
+import HookUseDebugValue from './playground/HookUseDebugValue'
+import HookUseReducer from './playground/HookUseReducer'
+import HookUseRef from './playground/HookuseRef'
 
 
 function App() {
@@ -15,6 +17,9 @@ function App() {
          <Route path='/useState' element={<HookUseState />}></Route>
          <Route path='/useNavigate' element={<HookUseNavigate />}></Route>
          <Route path='/useDebugValue' element={<HookUseDebugValue />}></Route>
+         <Route path='/useReducer' element={<HookUseReducer />}></Route>
+         <Route path='/useRef' element={<HookUseRef />}></Route>
+
          
 
       </Routes>
