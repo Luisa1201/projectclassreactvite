@@ -6,6 +6,7 @@ import HookUseNavigate from './playground/HookUseNavigate'
 import HookUseDebugValue from './playground/HookUseDebugValue'
 import HookUseReducer from './playground/HookUseReducer'
 import HookUseRef from './playground/HookuseRef'
+import HookImperativeHandle from './playground/HookUseImperativeHandle'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
          <Route path='/useDebugValue' element={<HookUseDebugValue />}></Route>
          <Route path='/useReducer' element={<HookUseReducer />}></Route>
          <Route path='/useRef' element={<HookUseRef />}></Route>
+         <Route path='/useImperativeHandle' element={<HookImperativeHandle />}></Route>
 
          
 
