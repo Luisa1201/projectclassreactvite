@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-function Contador(){
+function Contador() {
     const [count, setCount] = useState(0);
 
 
@@ -21,18 +21,21 @@ function Contador(){
 
 
 
-    return(
+    return (
         <div className="container text-center">
             <div>
                 <h1>Contador: {count} </h1>
                 <div className="btn-group">
                     {/* <button onClick={aumentar} className="btn btn-success">Aumentar</button>
                     <button onClick={disminuir} className="btn btn-warning">Disminuir</button> */}
-                    <button onClick={() => setCount(count+1)} className="btn btn-success">Aumentar</button>
-                    <button onClick={() => setCount(count-1)} className="btn btn-warning">Disminuir</button>
-                     <a href="/">Ir al home</a>
+                    <button onClick={() => setCount(count + 1)} className="btn btn-success">Aumentar</button>
+                    <button onClick={() => setCount(count - 1)} className="btn btn-warning">Disminuir</button>
 
-
+                </div>
+                <div className="mt-4">
+                    <a href="/" className="btn btn-outline-secondary">
+                        Ir al home
+                    </a>
                 </div>
             </div>
         </div>

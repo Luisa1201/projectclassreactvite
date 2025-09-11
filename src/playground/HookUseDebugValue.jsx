@@ -47,8 +47,12 @@ function HookUseDebugValue() {
             Offline
           </button>
         </div>
+        <div className="mt-2">
+          <a href="/" className="btn btn-outline-secondary">
+            Ir al home
+          </a>
+        </div>
       </div>
-      <a href="/" className="list-group-item">Ir al Home </a>
     </div>
     
   );
