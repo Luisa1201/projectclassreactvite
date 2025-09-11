@@ -72,7 +72,11 @@ export default function Page() {
       </button>
       <Post ref={postRef} />
 
-      <a href="/" className="list-group-item">Ir al Home </a>
+      <div className="mt-4">
+          <a href="/" className="btn btn-outline-secondary">
+            Ir al home
+          </a>
+        </div>
     </div>
     
     
