@@ -37,6 +37,11 @@ export default function Page() {
           Rojo
         </button>
       </div>
+      <div className="mt-4">
+        <a href="/" className="btn btn-outline-secondary">
+          Ir al home
+        </a>
+      </div>
     </div>
   );
 }

@@ -1,12 +1,10 @@
-import { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
-// 1. Creamos el contexto
+// Crear contexto
 const ThemeContext = createContext();
 
-// 2. Componente proveedor (maneja el estado global)
-function ThemeProvider({ children }) {
+export function ThemeProvider({ children }) {
   const [darkMode, setDarkMode] = useState(false);
-
   const toggleTheme = () => setDarkMode(!darkMode);
 
   return (
@@ -16,9 +14,12 @@ function ThemeProvider({ children }) {
   );
 }
 
-// 3. Componente que consume el contexto
+export function useTheme() {
+  return useContext(ThemeContext);
+}
+
 function Post() {
-  const { darkMode } = useContext(ThemeContext);
+  const { darkMode } = useTheme();
 
   return (
     <div
@@ -35,22 +36,34 @@ function Post() {
   );
 }
 
-// 4. Componente principal
-export default function Page() {
-  const { darkMode, toggleTheme } = useContext(ThemeContext);
+function HookUseContext() {
+  const { darkMode, toggleTheme } = useTheme();
 
   return (
-    <ThemeProvider>
-      <div className="container text-center mt-5">
-        <h2 className="mb-4">Ejemplo con useContext</h2>
-        <button
-          className={`btn ${darkMode ? "btn-light" : "btn-dark"} mb-3`}
-          onClick={toggleTheme}
-        >
-          Cambiar a {darkMode ? "🌞 Modo Claro" : "🌙 Modo Oscuro"}
-        </button>
-        <Post />
+    <div className="container text-center mt-5">
+      <h2 className="mb-4">Ejemplo con useContext</h2>
+      <button
+        className={`btn ${darkMode ? "btn-light" : "btn-dark"} mb-3`}
+        onClick={toggleTheme}
+      >
+        Cambiar a {darkMode ? "🌞 Modo Claro" : "🌙 Modo Oscuro"}
+      </button>
+      <Post />
+
+      <div className="mt-4">
+        <a href="/" className="btn btn-outline-secondary">
+          Ir al home
+        </a>
       </div>
+    </div>
+  );
+}
+
+// Envolvemos el componente con el proveedor para exportarlo
+export default function HookUseContextWrapper() {
+  return (
+    <ThemeProvider>
+      <HookUseContext />
     </ThemeProvider>
   );
 }

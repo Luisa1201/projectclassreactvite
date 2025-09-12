@@ -53,6 +53,11 @@ export default function Page() {
           Registrarse
         </button>
       </form>
+      <div className="mt-4">
+        <a href="/" className="btn btn-outline-secondary">
+          Ir al home
+        </a>
+      </div>
     </div>
   );
 }
