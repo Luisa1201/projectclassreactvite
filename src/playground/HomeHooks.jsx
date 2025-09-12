@@ -81,6 +81,15 @@ function HomeHooks(){
                         <td>Performance</td>
                     </tr>
                 </tbody>
+                <tbody>
+                    <tr>
+                        <td><strong>useTransition</strong></td>
+                        <td><a href="/useTransition" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
+                        <td>Para marcar algunas actualizaciones de estado como Transiciones.</td>
+                        <td>Performance</td>
+                    </tr>
+                </tbody>
+
              </table>
 
             </div>

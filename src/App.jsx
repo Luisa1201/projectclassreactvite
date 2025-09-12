@@ -9,7 +9,7 @@ import HookUseRef from './playground/HookuseRef'
 import HookImperativeHandle from './playground/HookUseImperativeHandle'
 import HookUseMemo from './playground/HookUseMemo'
 import HookUseCallback from './playground/HookUseCallback'
-
+import HookUseTransition from './playground/HookUseTransition'
 
 function App() {
 
@@ -25,8 +25,7 @@ function App() {
          <Route path='/useImperativeHandle' element={<HookImperativeHandle />}></Route>
          <Route path='/useMemo' element={<HookUseMemo />}></Route>
          <Route path='/useCallback' element={<HookUseCallback />}></Route>
-
-         
+         <Route path='/useTransition' element={<HookUseTransition/>}></Route>
 
       </Routes>
     </BrowserRouter>
