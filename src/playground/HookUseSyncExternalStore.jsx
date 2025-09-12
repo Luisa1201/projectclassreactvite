@@ -26,9 +26,8 @@ export default function Page() {
     <div className="container text-center mt-5">
       <h2 className="mb-4">Ejemplo con useSyncExternalStore</h2>
       <div
-        className={`alert ${
-          isOnline ? "alert-success" : "alert-danger"
-        } shadow-sm`}
+        className={`alert ${isOnline ? "alert-success" : "alert-danger"
+          } shadow-sm`}
         role="alert"
       >
         {isOnline ? "✅ Estás conectado a Internet" : "❌ Estás sin conexión"}
@@ -36,6 +35,12 @@ export default function Page() {
       <p className="text-muted">
         Activa el modo avión o desconéctate de la red para probar el cambio.
       </p>
+
+      <div className="mt-4">
+        <a href="/" className="btn btn-outline-secondary">
+          Ir al home
+        </a>
+      </div>
     </div>
   );
 }
