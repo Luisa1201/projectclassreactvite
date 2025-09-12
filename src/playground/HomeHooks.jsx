@@ -163,7 +163,7 @@ function HomeHooks(){
                 </tbody>
                 <tbody>
                     <tr>
-                        <td><strong>UseOptimistic</strong></td>
+                        <td><strong>useOptimistic</strong></td>
                         <td><a href="/useOptimistic" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
                         <td>Sirve para mostrar un estado optimista antes de que una acción asíncrona termine</td>
                         <td>Nuevos en React 19</td>

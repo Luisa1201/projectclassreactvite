@@ -17,6 +17,11 @@ import HookUseInsertionEffect from './playground/HookUseInsertionEffect'
 import HookUseContext from './playground/HookUseContext'
 import HookUseSyncExternalStore from './playground/HookUseSyncExternalStore'
 import HookUseId from './playground/HookUseId'
+import HookUse from './playground/HookUse'
+import HookUseOptimistic from './playground/HookUseOptimistic'
+import HookUseFormStatus from './playground/HookUseFormStatus'
+import HookUseActionState from './playground/HookUseActionState'
+
 
 function App() {
 
@@ -40,6 +45,10 @@ function App() {
         <Route path='/useContext' element={<HookUseContext/>}></Route>
         <Route path='/useSyncExternalStore' element={<HookUseSyncExternalStore/>}></Route>
         <Route path='/useId' element={<HookUseId/>}></Route>
+        <Route path='/use' element={<HookUse/>}></Route>
+        <Route path='/useOptimistic' element={<HookUseOptimistic/>}></Route>
+        <Route path='/useFormStatus' element={<HookUseFormStatus/>}></Route>
+        <Route path='/useActionState' element={<HookUseActionState/>}></Route>
 
       </Routes>
     </BrowserRouter>
