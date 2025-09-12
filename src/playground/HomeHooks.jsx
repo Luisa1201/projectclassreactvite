@@ -97,6 +97,22 @@ function HomeHooks(){
                         <td>Performance</td>
                     </tr>
                 </tbody>
+                <tbody>
+                    <tr>
+                        <td><strong>useEffect</strong></td>
+                        <td><a href="/useEffect" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
+                        <td>Permite sincronizar un componente con un sistema externo.</td>
+                        <td>Efectos / Ciclo de vida</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><strong>useLayoutEffec</strong></td>
+                        <td><a href="/useLayoutEffec" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
+                        <td>Es útil cuando necesitamos realizar cambios en el DOM y queremos asegurarnos de que el usuario los vea inmediatamente antes de que vea cualquier otra cosa .</td>
+                        <td>Efectos / Ciclo de vida</td>
+                    </tr>
+                </tbody>
 
              </table>
 
