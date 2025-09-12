@@ -11,6 +11,8 @@ import HookUseMemo from './playground/HookUseMemo'
 import HookUseCallback from './playground/HookUseCallback'
 import HookUseTransition from './playground/HookUseTransition'
 import HookUseDeferredValue from './playground/HookUseDeferredValue'
+import HookUseEffect from './playground/HookUseEffect'
+import HookUseLayoutEffec from './playground/HookUseLayoutEffec'
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
          <Route path='/useCallback' element={<HookUseCallback />}></Route>
          <Route path='/useTransition' element={<HookUseTransition/>}></Route>
         <Route path='/useDeferredValue' element={<HookUseDeferredValue/>}></Route>
+        <Route path='/useEffect' element={<HookUseEffect/>}></Route>
+        <Route path='/useLayoutEffec' element={<HookUseLayoutEffec/>}></Route>
 
       </Routes>
     </BrowserRouter>
