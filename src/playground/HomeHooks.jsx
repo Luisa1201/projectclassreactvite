@@ -89,6 +89,14 @@ function HomeHooks(){
                         <td>Performance</td>
                     </tr>
                 </tbody>
+                <tbody>
+                    <tr>
+                        <td><strong>useDeferredValue</strong></td>
+                        <td><a href="/useDeferredValue" className="btn btn-primary btn-sm">Ir a ejemplo</a></td>
+                        <td>Permite renderizar un valor con una prioridad baja. Esto es útil para renderizar un valor que no es crítico para la interacción del usuario.</td>
+                        <td>Performance</td>
+                    </tr>
+                </tbody>
 
              </table>
 
