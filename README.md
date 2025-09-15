@@ -1,83 +1,120 @@
-# 📌 Documentación de Hooks en React con Vite
+# 📘 Documentación de Hooks en React
 
-Recopilacion de los **hooks en React**, explicando para qué sirven, cómo funcionan y ejemplos de uso.  
-
----
-
-## 📑 Tabla Resumen
-
-| Hook                 | Categoría    | Descripción                                                                |
-|----------------------|--------------|-----------------------------------------------------------------------------|
-| **useDebugValue**    | Debug        | Muestra un valor de depuración legible en herramientas de desarrollo.       |
-| **useNavigate**      | Navegación   | Permite navegar entre rutas en React Router.                                |
-| **useState**         | Estado       | Maneja el estado dentro de un componente funcional.                         |
-| **useReducer**       | Estado       | Lógica de estado personalizada, similar a Redux.                            |
-| **useRef**           | Referencias  | Guarda valores mutables y accede a elementos del DOM sin provocar renders.  |
-| **useImperativeHandle** | Referencias | Expone funciones personalizadas de un componente hijo a su padre.         |
-| **useMemo**          | Performance  | Memoriza cálculos costosos para evitar recomputarlos en cada render.        |
-| **useCallback**      | Performance  | Memoriza funciones para evitar renders innecesarios en componentes hijos.   |
-| **useTransition**    | Performance  | Permite marcar actualizaciones como transiciones de baja prioridad.         |
-| **useDeferredValue** | Performance  | Retrasa el renderizado de un valor para no bloquear la interacción.         |
-
----
-## Funcion de cada uno 
----
-## 🔍 Debug
-
-### `useDebugValue`
-Sirve para mostrar un valor de depuración legible en las herramientas de desarrollo de React, principalmente cuando se crean *custom hooks*.  
+Este proyecto contiene ejemplos y explicaciones de diferentes **Hooks de React**, que permiten manejar estado, efectos, contexto y optimización dentro de componentes funcionales.
 
 ---
 
-## 🧭 Navegación
-
-### `useNavigate`
-Sirve para navegar entre rutas dentro de una aplicación que utiliza **React Router**.  
-
----
-
-## 📦 Estado
-
-### `useState`
-Sirve para manejar el estado dentro de un componente funcional de React.  
+## 🔹 useState
+Permite manejar el **estado local** de un componente funcional.  
+Se utiliza para guardar y actualizar valores que cambian con la interacción del usuario o el ciclo de vida del componente.
 
 ---
 
-### `useReducer`
-Sirve para manejar lógica de estado más compleja que `useState`, permitiendo definir un reductor con acciones y estados.  
+## 🔹 useEffect
+Sirve para ejecutar **efectos secundarios** en un componente, como llamadas a APIs, suscripciones o manipulación del DOM.  
+Reemplaza los métodos de ciclo de vida de clases (`componentDidMount`, `componentDidUpdate`, `componentWillUnmount`).
 
 ---
 
-## 📌 Referencias
-
-### `useRef`
-Sirve para almacenar valores mutables que no provocan un re-render al actualizarse y para acceder a elementos del DOM directamente.  
-
----
-
-### `useImperativeHandle`
-Sirve para exponer funciones o valores personalizados de un componente hijo hacia su componente padre cuando se usa junto a `forwardRef`.  
+## 🔹 useContext
+Permite **consumir valores de un contexto** sin necesidad de pasar props manualmente a través de múltiples niveles de componentes.  
+Ideal para **temas globales, autenticación o idioma**.
 
 ---
 
-## ⚡ Performance
-
-### `useMemo`
-Sirve para memorizar el resultado de cálculos costosos y evitar que se vuelvan a ejecutar en cada render.  
-
----
-
-### `useCallback`
-Sirve para memorizar funciones y evitar que se redefinan en cada render, lo que ayuda a optimizar componentes hijos que reciben esas funciones como props.  
+## 🔹 useReducer
+Alternativa a `useState` cuando la lógica del estado es más compleja.  
+Se usa junto con un **reductor** (función que define cómo se actualiza el estado basado en acciones).
 
 ---
 
-### `useTransition`
-Sirve para marcar algunas actualizaciones de estado como transiciones de baja prioridad, manteniendo la interfaz fluida.  
+## 🔹 useRef
+Crea una referencia mutable que **no provoca renderizados** al cambiar.  
+Se usa para acceder a elementos del DOM o almacenar valores persistentes entre renderizados.
 
 ---
 
-### `useDeferredValue`
-Sirve para retrasar el renderizado de un valor que no es crítico, permitiendo priorizar la interacción del usuario en la UI.  
+## 🔹 useMemo
+Permite **memorizar un valor calculado** para evitar cálculos costosos en cada render.  
+Se usa para optimizar rendimiento.
 
 ---
+
+## 🔹 useCallback
+Devuelve una versión **memorizada de una función** que solo cambia si sus dependencias cambian.  
+Útil para evitar renderizados innecesarios en componentes hijos.
+
+---
+
+## 🔹 useId
+Genera un **ID único y estable** para elementos accesibles (como inputs y labels).  
+Se asegura de que no haya colisiones de ID incluso en renderizado del lado del servidor.
+
+---
+
+## 🔹 useTransition
+Permite diferir ciertas actualizaciones de estado para que la interfaz siga siendo **interactiva y fluida** en operaciones pesadas.
+
+---
+
+## 🔹 useDeferredValue
+Retrasa la actualización de un valor para mejorar la **experiencia del usuario** en entradas rápidas o pesadas.  
+Se usa para evitar bloqueos mientras se procesa una actualización.
+
+---
+
+## 🔹 useImperativeHandle
+Personaliza el valor expuesto cuando se usa `ref` en un componente.  
+Permite controlar qué métodos o propiedades son accesibles desde fuera.
+
+---
+
+## 🔹 useLayoutEffect
+Similar a `useEffect`, pero se ejecuta **sincrónicamente después de que el DOM ha sido modificado**.  
+Se usa cuando necesitas medir o modificar el DOM antes de que se pinte en pantalla.
+
+---
+
+## 🔹 useInsertionEffect
+Un hook especializado que permite **insertar estilos en el DOM antes de que React realice cualquier mutación**.  
+Se usa principalmente en librerías de estilos en React.
+
+---
+
+## 🔹 useDebugValue
+Permite mostrar etiquetas personalizadas en las **DevTools de React** para mejorar la depuración de Hooks personalizados.
+
+---
+
+## 🔹 useSyncExternalStore
+Facilita la suscripción a **stores externos** (como Redux, Zustand u otras librerías de estado global).  
+Asegura compatibilidad con renderizado concurrente.
+
+---
+
+## 🔹 useActionState (Experimental)
+Hook experimental que maneja el estado de una **acción asincrónica**.  
+Permite simplificar la gestión de formularios y eventos con efectos colaterales.
+
+---
+
+## 🔹 useFormStatus (Experimental)
+Hook experimental usado en **React Server Components**.  
+Permite conocer el estado actual de un formulario (ej. `pending`, `success`, `error`).
+
+---
+
+## 🔹 useNavigate (React Router)
+No es parte de React puro, sino de **React Router DOM**.  
+Sirve para **navegar programáticamente** entre rutas en una aplicación.
+
+---
+
+## 🔹 useOptimistic (Experimental - React 18+)
+Permite mostrar una **actualización optimista** en la UI antes de que se confirme el cambio real en el servidor.  
+Muy útil en experiencias interactivas como "likes" o "comentarios".
+
+---
+
+# ✅ Conclusión
+Estos Hooks permiten a los desarrolladores de React manejar **estado, efectos, contexto, rendimiento y flujos avanzados** dentro de componentes funcionales, facilitando la creación de aplicaciones dinámicas, escalables y eficientes.
